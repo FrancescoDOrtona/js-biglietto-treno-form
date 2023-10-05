@@ -8,6 +8,13 @@
     --light: white;
 }
 
+/* utility */
+
+.bg-green{
+    background-color: var(--green);
+}
+
+/* Main */
 body{
     background-color: #141922;
     color: var(--light);
@@ -15,6 +22,8 @@ body{
 
 section{
     max-width: 900px;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .form-control:focus.shadow-style,
@@ -22,3 +31,4 @@ section{
     border-color: #ADFF2F;
     box-shadow: 0 0 0 0.25rem rgb(173, 255, 47, 0.25);
 }
+
