@@ -3,6 +3,9 @@
 // - Inserisco gli input in html con le relative class, id e value
 // - Dichiaro le variabili globali
 //     - prendo gli elementi dal DOM
+const userNameDOMElement = document.getElementById('user-name')
+console.log(userNameDOMElement)
+
 const distanceDOMElement = document.getElementById('distance')
 console.log(distanceDOMElement)
 
@@ -15,6 +18,8 @@ console.log(btnDOMElement)
 const priceDOMElement = document.getElementById('price')
 console.log(priceDOMElement)
 
+const nameDOMElement = document.getElementById('name')
+
 const priceForKm = 0.21
 console.log(priceForKm)
 
@@ -23,7 +28,6 @@ console.log(priceForKm)
 //     - prendo il valore dei km  e calcolo il prezzo del biglietto per 0.21€ al km
 //     - prendo il valore degli sconti e calcolo gli sconti se minorenni 20% o >65 anni 40$
 // - Calcolo il prezzo finale del biglietto
-// - Stampo il prezzo nel DOM
 btnDOMElement.addEventListener('click', function () {
     const km = parseFloat(distanceDOMElement.value)
     console.log(km)
@@ -44,6 +48,14 @@ btnDOMElement.addEventListener('click', function () {
 
     }
 
+// - Recupero la value dall'input e stampo il nome del passeggero nel DOM
+    const name = userNameDOMElement.value
+    nameDOMElement.innerHTML = name
+    console.log(name)
+
+// - Stampo il prezzo nel DOM
     priceDOMElement.innerHTML = price.toFixed(2) + ' &euro;'
     console.log(priceDOMElement)
 })
+
+
