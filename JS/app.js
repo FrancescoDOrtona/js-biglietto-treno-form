@@ -49,7 +49,7 @@ btnDOMElement.addEventListener('click', function () {
     if (isNaN(km) || (km < 0)){
         return alert('Valore non Valido')
 
-    } else if (name === ''){
+    } else if (name === '' || name !== String){
         return alert('Inserisci i dati del Passeggero')
 
     }
