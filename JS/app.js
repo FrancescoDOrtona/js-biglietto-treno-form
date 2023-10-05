@@ -46,6 +46,14 @@ btnDOMElement.addEventListener('click', function () {
     nameDOMElement.innerHTML = name
     console.log(name)
 
+    if (isNaN(km) || (km < 0)){
+        return alert('Valore non Valido')
+
+    } else if (name === ''){
+        return alert('Inserisci i dati del Passeggero')
+
+    }
+
     let price = km * priceForKm
     console.log(price)
 
@@ -58,15 +66,6 @@ btnDOMElement.addEventListener('click', function () {
         console.log(price)  
 
     }
-
-    if (isNaN(km) || (km < 0)){
-        return alert('Valore non Valido')
-
-    } else if (name === ''){
-        return alert('Inserisci i dati del Passeggero')
-
-    }
-
 
 // - Stampo il tipo di biglietto nel DOM al click
     ticketTypeDOMElement.innerHTML = 'Biglietto Standard'
