@@ -7,7 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- First Section with user form  -->
+    <section>
+        <div class="container">
+            <!-- Inputs -->
+            <input type="text" name="distance" id="distance" placeholder="Inserisci i Km da percorrere">
+        </div>
+        <div>
+            <select name="discount" id="discount">
+                <option value="0">Minorenne</option>
+                <option value="1">Maggiorenne</option>
+                <option value="2">Over 65</option>
+            </select>
+            <button id="btn-price">
+                Cacola Prezzo
+            </button>
+            <div id="price">
+                -
+            </div>
+        </div>
+    </section>
 
     <script src="./JS/app.js"></script>
 
