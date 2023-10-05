@@ -44,6 +44,7 @@ section{
 .table.table-style{
     --bs-table-color: currentColor;
     --bs-table-bg: none;
+    border-color: var(--green);
 }
 
 .table td, #name{
