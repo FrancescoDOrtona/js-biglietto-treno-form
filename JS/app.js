@@ -59,16 +59,18 @@ btnDOMElement.addEventListener('click', function () {
 
     if  (discount === '0'){
         price = price - (price * 20 / 100)
+        ticketTypeDOMElement.innerHTML = 'Biglietto Ridotto'
         console.log(price)
+
+    } else if (discount === '1'){
+        ticketTypeDOMElement.innerHTML = 'Biglietto Standard'
 
     } else if (discount === '2'){
         price = price - (price * 40 / 100)
+        ticketTypeDOMElement.innerHTML = 'Biglietto Senior'
         console.log(price)  
 
     }
-
-// - Stampo il tipo di biglietto nel DOM al click
-    ticketTypeDOMElement.innerHTML = 'Biglietto Standard'
 
 // - Genero un numero della carrozza del treno da 1 a 10 e la stampo nel DOM
     const carriageNumber = Math.floor(Math.random() * 10) + 1
