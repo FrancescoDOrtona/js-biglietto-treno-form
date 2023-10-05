@@ -10,8 +10,8 @@
 <body>
     <!-- First Section with user form  -->
     <section class="container-fluid d-flex flex-column align-items-center">
-        <h1>Calcola il prezzo del tuo biglietto</h1>
-        <form class="row gy-2 gx-3 align-items-center w-100 py-4">
+        <h1 class="pb-3">Calcola il prezzo del tuo biglietto</h1>
+        <form class="row gy-2 gx-3 align-items-center w-100 py-4 form-style">
             <div class="col">
               <label class="form-label" for="user-name">Nome e Cognome</label>
               <input type="text" class="form-control shadow-style" id="user-name" placeholder="Mario Rossi">
@@ -28,20 +28,7 @@
                 <option value="1">Maggiorenne</option>
                 <option value="2">Over 65</option>
               </select>
-            </div>
-        <!-- <div>      
-            <div class="user-inputs">          
-                <input type="text" name="user-name" id="user-name" placeholder="Nome e Cognome">
-
-                <input type="text" name="distance" id="distance" placeholder="Inserisci i Km da percorrere">
-            
-                
-                <select name="discount" id="discount">
-                    <option value="0">Minorenne</option>
-                    <option value="1">Maggiorenne</option>
-                    <option value="2">Over 65</option>
-                </select>
-            </div> -->
+            </div>        
 
             <div class="user-btn d-flex justify-content-center gap-4 pt-5">
                 <button type="button" class="btn bg-green" id="btn-price">
