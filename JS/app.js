@@ -21,7 +21,7 @@ console.log(priceForKm)
 // - Eseguo la funzione al click del bottone tramite un Event Listener
 //     - Recupero dall'input il valore dei value
 //     - prendo il valore dei km  e calcolo il prezzo del biglietto per 0.21€ al km
-//     - prendo il valore degli sconti e calcolo gli sconti se minorenni o >65 anni
+//     - prendo il valore degli sconti e calcolo gli sconti se minorenni 20% o >65 anni 40$
 // - Calcolo il prezzo finale del biglietto
 // - Stampo il prezzo nel DOM
 btnDOMElement.addEventListener('click', function () {
@@ -31,8 +31,18 @@ btnDOMElement.addEventListener('click', function () {
     const discount = discountDOMElement.value
     console.log(discount)
 
-    const price = km * priceForKm
+    let price = km * priceForKm
     console.log(price)
+
+    if  (discount === '0'){
+        price = price - (price * 20 / 100)
+        console.log(price)
+
+    } else if (discount === '2'){
+        price = price - (price * 40 / 100)
+        console.log(price)  
+
+    }
 
     priceDOMElement.innerHTML = price.toFixed(2) + ' &euro;'
     console.log(priceDOMElement)
