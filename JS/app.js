@@ -28,6 +28,9 @@ btnDOMElement.addEventListener('click', function () {
     const km = parseFloat(distanceDOMElement.value)
     console.log(km)
 
+    const discount = discountDOMElement.value
+    console.log(discount)
+
     const price = km * priceForKm
     console.log(price)
 
