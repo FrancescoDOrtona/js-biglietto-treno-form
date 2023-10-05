@@ -54,6 +54,10 @@ btnDOMElement.addEventListener('click', function () {
 
     }
 
+    if (isNaN(km) || (km < 0)){
+        alert('Valore non Valido') 
+    }
+
 // - Recupero la value dall'input e stampo il nome del passeggero nel DOM
     const name = userNameDOMElement.value
     nameDOMElement.innerHTML = name
