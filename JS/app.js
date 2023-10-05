@@ -15,7 +15,10 @@ console.log(btnDOMElement)
 const priceDOMElement = document.getElementById('price')
 console.log(priceDOMElement)
 
-// - Recupero dall'input il valore dei value
+const priceForKm = 0.21
+console.log(priceForKm)
+// - Eseguo la funzione al click del bottone tramite un Event Listener
+//     - Recupero dall'input il valore dei value
 //     - prendo il valore dei km  e calcolo il prezzo del biglietto per 0.21€ al km
 //     - prendo il valore degli sconti e calcolo gli sconti se minorenni o >65 anni
 // - Calcolo il prezzo finale del biglietto
