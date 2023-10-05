@@ -39,3 +39,14 @@ section{
     border-radius: 15px;
 }
 
+/* table */
+
+.table.table-style{
+    --bs-table-color: currentColor;
+    --bs-table-bg: none;
+}
+
+.table td, #name{
+    padding: 2rem 0.5rem;
+}
+
