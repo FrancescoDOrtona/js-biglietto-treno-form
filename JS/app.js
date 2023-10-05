@@ -20,6 +20,12 @@ console.log(priceDOMElement)
 
 const nameDOMElement = document.getElementById('name')
 
+const ticketTypeDOMElement = document.getElementById('ticket-type')
+
+const carriageDOMElement = document.getElementById('carriage-number')
+
+const codeDOMElement = document.getElementById('cp-code')
+
 const priceForKm = 0.21
 console.log(priceForKm)
 
@@ -52,6 +58,21 @@ btnDOMElement.addEventListener('click', function () {
     const name = userNameDOMElement.value
     nameDOMElement.innerHTML = name
     console.log(name)
+
+// - Stampo il tipo di biglietto nel DOM al click
+    ticketTypeDOMElement.innerHTML = 'Biglietto Standard'
+
+// - Genero un numero della carrozza del treno da 1 a 10 e la stampo nel DOM
+    const carriageNumber = Math.floor(Math.random() * 10) + 1
+    console.log(carriageNumber)
+
+    carriageDOMElement.innerHTML = carriageNumber
+
+// - Genero un numero per creare un codice CP con massimo 5 cifre e lo stampo nel DOM
+    const cpCode = Math.floor(Math.random() * 100000)
+    console.log(cpCode)
+
+    codeDOMElement.innerHTML = cpCode
 
 // - Stampo il prezzo nel DOM
     priceDOMElement.innerHTML = price.toFixed(2) + ' &euro;'
