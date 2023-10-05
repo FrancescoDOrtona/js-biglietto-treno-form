@@ -8,11 +8,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Calcola il prezzo del tuo biglietto</h1>
     <!-- First Section with user form  -->
-    <section>
-        <div class="container">
-            <!-- Inputs -->
+    <section class="container-fluid d-flex flex-column align-items-center">
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <form class="row gy-2 gx-3 align-items-center w-100">
+            <div class="col">
+              <label class="form-label" for="user-name">Nome e Cognome</label>
+              <input type="text" class="form-control shadow-style" id="user-name" placeholder="Mario Rossi">
+            </div>
+            <div class="col">
+              <label class="form-label" for="distance">Km da percorrere</label>             
+                <input type="text" class="form-control shadow-style" id="distance" placeholder="Tratta in Km">             
+            </div>
+            <div class="col">
+              <label class="form-label" for="discount">Fascia d'età</label>
+              <select class="form-select shadow-style" id="discount">
+                <option selected>Seleziona</option>
+                <option value="0">Minorenne</option>
+                <option value="1">Maggiorenne</option>
+                <option value="2">Over 65</option>
+              </select>
+            </div>
+        <!-- <div>      
             <div class="user-inputs">          
                 <input type="text" name="user-name" id="user-name" placeholder="Nome e Cognome">
 
@@ -24,7 +41,7 @@
                     <option value="1">Maggiorenne</option>
                     <option value="2">Over 65</option>
                 </select>
-            </div>
+            </div> -->
 
             <div class="user-btn">
                 <button id="btn-price">
@@ -39,9 +56,10 @@
 
 <!-- section 2 Passenger Ticket -->
 
-    <h1>Il tuo biglietto</h1>
+    
 
-    <section>
+    <section class="container-fluid d-flex flex-column align-items-center">
+            <h1>Il tuo biglietto</h1>
             <div>
                 <h2>Dettagli del passeggero</h2>
                 <div id="name">
