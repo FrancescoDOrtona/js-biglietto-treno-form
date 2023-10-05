@@ -41,6 +41,11 @@ btnDOMElement.addEventListener('click', function () {
     const discount = discountDOMElement.value
     console.log(discount)
 
+// - Recupero la value dall'input e stampo il nome del passeggero nel DOM
+    const name = userNameDOMElement.value
+    nameDOMElement.innerHTML = name
+    console.log(name)
+
     let price = km * priceForKm
     console.log(price)
 
@@ -55,13 +60,13 @@ btnDOMElement.addEventListener('click', function () {
     }
 
     if (isNaN(km) || (km < 0)){
-        alert('Valore non Valido') 
+        return alert('Valore non Valido')
+
+    } else if (name === ''){
+        return alert('Inserisci i dati del Passeggero')
+
     }
 
-// - Recupero la value dall'input e stampo il nome del passeggero nel DOM
-    const name = userNameDOMElement.value
-    nameDOMElement.innerHTML = name
-    console.log(name)
 
 // - Stampo il tipo di biglietto nel DOM al click
     ticketTypeDOMElement.innerHTML = 'Biglietto Standard'
